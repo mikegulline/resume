@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Info from './common/info';
+import Work from './common/work';
+import Education from './common/education';
+import Certifications from './common/certifications';
+import Skills from './common/skills';
+import resume from './data/data';
+import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    const {work, education, certifications, skills} = resume;
+    return (
+      <>
+        <article id="resume"  class="container bubble">
+
+          <Info resume={resume} />
+
+          <Work work={work} />
+
+          <Education education={education} />
+
+          <Certifications certifications={certifications} />
+
+          <Skills skills={skills} />
+
+        </article>
+        <div id="background"></div> 
+      </>
+    );
+  }
 }
 
 export default App;
