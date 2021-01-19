@@ -38,7 +38,9 @@ class Info extends Component {
       <section id="info">
         <div class="toggleX">
           <input type="checkbox" id="switch" onChange={this.handelSwitch} />
-          <label for="switch">Toggle</label>
+          <label for="switch" aria-hidden="true">
+            Toggle
+          </label>
         </div>
 
         <header>

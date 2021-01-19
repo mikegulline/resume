@@ -40,16 +40,13 @@ body {
   margin: 0;
   position: relative;
 }
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  opacity: 1;
-}
 
 #background {
   z-index: 0;
-  position: absolute !important;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   top: 0;
   right: 0;
@@ -58,24 +55,14 @@ input {
   &:before,
   &:after {
     content: "";
-    display: block;
     width: 500px;
-    height: 5200px;
-    position: absolute;
-    z-index: 0;
-    top: -1000px;
-    left: 0;
+    height: 200%;
     transform: rotate(45deg);
-    border-radius: 50px;
   }
-  &:after {
-    width: 300px;
-    height: 3750px;
-    transform: rotate(45deg);
-    border-radius: 50px;
-    z-index: 2;
-    left: 0;
-    top: -800px;
+  &:before {
+    width: 350px;
+    margin-right: 230px;
+    // transform: rotate(45deg);
   }
 }
 .container {
@@ -84,7 +71,7 @@ input {
   margin: auto;
   max-width: 1300px;
   min-width: 320px;
-  padding: 60px 50px 25px 50px;
+  padding: 60px 50px 50px 50px;
   display: grid;
   grid-template-columns: 325px auto;
   grid-template-rows: auto auto auto auto 1fr;
@@ -276,6 +263,7 @@ ul.fa-ul {
     height: 0;
     width: 0;
     visibility: hidden;
+    display: none;
   }
 
   label {
@@ -283,10 +271,10 @@ ul.fa-ul {
     text-indent: -9999px;
     width: 60px;
     height: 30px;
-    background: #abccec;
     display: block;
     border-radius: 100px;
     position: relative;
+    overflow: hidden;
   }
 
   label:after {
@@ -296,13 +284,8 @@ ul.fa-ul {
     left: 3px;
     width: 24px;
     height: 24px;
-    background: #fff;
     border-radius: 90px;
-    transition: 0.3s;
-  }
-
-  input:checked + label {
-    background: #11151e;
+    transition: left 0.3s, transform 0.3s;
   }
 
   input:checked + label:after {
@@ -323,7 +306,7 @@ ul.fa-ul {
   }
   .container {
     font-size: 15px;
-    padding: 60px 30px 25px 30px;
+    padding: 60px 30px 30px 30px;
     grid-column-gap: 30px;
     box-shadow: none;
     border-radius: 0;
@@ -412,10 +395,11 @@ ul.fa-ul {
     color: $high1;
   }
   #background {
-    &:before {
+    &:after {
       background: $high1;
     }
-    &:after {
+    &:before {
+      z-index: 2;
       background: $back2;
       box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.15);
     }
@@ -470,7 +454,7 @@ body {
   $back3: #f0f0f0;
   $back4: #eaf2fa;
   $dropShadow1: 0 0 40px rgba(0, 0, 0, 0.1);
-  $dropShadow2: 0 4px 16px -8px #225990;
+  $dropShadow2: 0 2px 12px -5px #225990;
   $font1: #444444;
   $font3: $font1;
   $font4: #ffffff;
@@ -481,9 +465,10 @@ body {
   .toggleX {
     label:after {
       background: $back2;
+      box-shadow: $dropShadow2;
     }
     input:checked + label {
-      background: $pill;
+      background: $back4;
     }
   }
 
@@ -508,7 +493,7 @@ body.dark {
   $back3: #232834;
   $back4: #11151e;
   $dropShadow1: 0 0 40px rgba(0, 0, 0, 0.4);
-  $dropShadow2: 0 4px 16px -8px #000000;
+  $dropShadow2: 0 2px 9px 0px #000000;
   $font1: #707a8c;
   $font3: #ffffff;
   $font4: #535c6e;
@@ -521,6 +506,7 @@ body.dark {
       background: $back4;
     }
     label:after {
+      box-shadow: $dropShadow2;
       background: $font4;
     }
   }
@@ -539,18 +525,4 @@ body.dark {
     $high1,
     $pill
   );
-}
-
-.toggleX {
-  label {
-    background: #abccec;
-  }
-
-  label:after {
-    background: #fff;
-  }
-
-  input:checked + label {
-    background: #11151e;
-  }
 }
