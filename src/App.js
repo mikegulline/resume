@@ -1,4 +1,5 @@
 import React from 'react';
+import Switch from "./common/switch";
 import Info from './common/info';
 import Work from './common/work';
 import Education from './common/education';
@@ -16,13 +17,15 @@ class App extends React.Component {
 
           <Info resume={resume} />
 
+          <Skills skills={skills} />
+
           <Work work={work} />
 
           <Education education={education} />
 
           <Certifications certifications={certifications} />
 
-          <Skills skills={skills} />
+          <Switch />
 
         </article>
         <div id="background"></div> 

@@ -13,12 +13,6 @@ import {
 //===========================
 
 class Info extends Component {
-  handelSwitch = (e) => {
-    e.target.checked
-      ? document.getElementById("root").classList.remove("dark")
-      : document.getElementById("root").classList.add("dark");
-  };
-
   render() {
     let info = this.props.resume.info;
     let contact = this.props.resume.contact;
@@ -36,13 +30,6 @@ class Info extends Component {
 
     return (
       <section id="info">
-        <div class="toggleX">
-          <input type="checkbox" id="switch" onChange={this.handelSwitch} />
-          <label for="switch" aria-hidden="true">
-            Toggle
-          </label>
-        </div>
-
         <header>
           <h1>
             {info.first} {info.last}

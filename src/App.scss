@@ -74,14 +74,18 @@ body {
   padding: 60px 50px 50px 50px;
   display: grid;
   grid-template-columns: 325px auto;
-  grid-template-rows: auto auto auto auto 1fr;
+  grid-template-rows: auto auto auto auto auto 1fr;
   grid-column-gap: 50px;
   grid-template-areas:
+    "navbar navbar"
     "info body"
     "skills body"
     "contact body"
     "education body"
     "certifications body";
+  #navbar {
+    grid-area: navbar;
+  }
   #info {
     grid-area: info;
   }
@@ -322,6 +326,7 @@ ul.fa-ul {
     grid-template-rows: auto;
     grid-column-gap: 30px;
     grid-template-areas:
+      "navbar"
       "info"
       "contact"
       "skills"
