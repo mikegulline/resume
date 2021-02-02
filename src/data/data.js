@@ -2,7 +2,7 @@ const resume = {
     info: {
       first: "Michael",
       last: "Gulline",
-      title: "Front End Web Developer",
+      title: "Senior Front End Developer",
       summary:
         "<b>Front end web developer</b> with extensive <b>print design</b> experience. Creator of responsive web apps, using established frameworks, build tools, and open source web assets. <b>Focused on the action and reaction of both product and user.</b>",
       avatar: "",
@@ -92,7 +92,7 @@ const resume = {
         start: "2000",
         end: "Present",
         notes: [
-          "Compose and maintain <b>responsive e-commerce websites</b> for multiple companies using Adobe Suite, HTML, CSS3, SCSS, Bootstrap, JavaScript, jQuery, <b>React</b>, Ajax, PHP, MySQL, <b>Shopify</b>, <b>WordPress</b>, <b>WooCommerce</b>, <b>MailChimp</b>",
+          "Compose and maintain <b>responsive e-commerce websites</b> for multiple companies using HTML, CSS3, SCSS, Bootstrap, JavaScript, jQuery, <b>React</b>, Ajax, PHP, MySQL, <b>Shopify</b>, <b>WordPress</b>, <b>WooCommerce</b>",
           "Fully integrated online newsletters using the <b>MailChimp API</b>, with custom sign-up forms, campaign automation and tracking",
           "Developed custom <b>discount plug-in</b> for company's unique online pricing options",
           "Direct all print collateral (product packaging, displays, direct mail and advertising)"
@@ -113,7 +113,7 @@ const resume = {
         state: "MT",
         onsite: 0,
         website: "",
-        title: "Front End Web Developer",
+        title: "Front End Developer",
         type: "Contract",
         start: "2011",
         end: "2014",
@@ -222,39 +222,16 @@ const resume = {
       [
         "Programing",
         [
-          "UI",
-          "UX",
-          "JavaScript",
-          "ECMA6",
-          "React",
-          "JSX",
-          "jQuery",
-          "Ajax",
-          "HTML",
-          "HTML5",
-          "CSS3",
-          "CSS Animation",
-          "CSS Flexbox",
-          "CSS Grid",
-          "SCSS",
-          "{less}",
-          "Emmet",
-          "Bootstrap",
-          "Font Awesome",
-          "REST",
-          "PHP",
-          "MySQL",
-          "FireBug",
-          "Mozilla Developer Tools"
+          "JavaScript", "ECMA6", "React", "JSX", "Ajax", "jQuery", "CSS", "CSS3", "CSS Animation", "CSS Flexbox", "CSS Grid", "SCSS", "{less}", "HTML", "HTML5", "Font Awesome", "REST", "PHP", "MySQL", "Emmet", "Bootstrap", "Front End Web Development", "E-commerce",  "User Experience (UX)", "User Interface (UI)", "Web Design", "Search Engine Optimization (SEO)"
         ]
       ],
   
-      [
-        "Graphic Design",
-        ["Adobe PhotoShop", "Adobe Illustrator", "Adobe Indesign"]
-      ],
+      // [
+      //   "Graphic Design",
+      //   ["Typography", "Creative Problem Solving", "Creativity Skills", "Graphic Design", "Graphic Arts", "Adobe Creative Suite", "PhotoShop", "Illustrator", "Indesign"]
+      // ],
   
-      ["Content Management", ["WordPress", "Woocommerce", "Shopify"]]
+      ["Content Management", ["WordPress", "WooCommerce", "Shopify", "MailChimp"]]
     ]
   };
 
