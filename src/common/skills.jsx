@@ -11,7 +11,7 @@ const Skills = ({ skills }) => {
 
           <ul className="skills">
             {s[1].map((i) => (
-              <li>{i}, </li>
+              <li>{i}</li>
             ))}
           </ul>
         </article>
