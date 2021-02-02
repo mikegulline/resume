@@ -94,6 +94,7 @@ const resume = {
         notes: [
           "Compose and maintain <b>responsive e-commerce websites</b> for multiple companies using HTML, CSS3, SCSS, Bootstrap, JavaScript, jQuery, <b>React</b>, Ajax, PHP, MySQL, <b>Shopify</b>, <b>WordPress</b>, <b>WooCommerce</b>",
           "Fully integrated online newsletters using the <b>MailChimp API</b>, with custom sign-up forms, campaign automation and tracking",
+          "<b>Doubled internet revenue</b> by sending promotional emails to an unused house list",
           "Developed custom <b>discount plug-in</b> for company's unique online pricing options",
           "Direct all print collateral (product packaging, displays, direct mail and advertising)"
         ],
