@@ -4,7 +4,7 @@ const resume = {
       last: "Gulline",
       title: "Senior Front End Developer",
       summary:
-        "<b>Front end developer</b> with extensive <b>print design</b> experience. Creator of ultra-responsive web apps through <em>“best practices”</em>, leveraging established frameworks, build tools and open source web assets. <b>Focused on the action and reaction of both product and user.</b>",
+        "Professional Front End Developer and Designer with over 23 years experience creating ultra-responsive web apps and back end marketing materials. Team player, with a strong track record of loyalty. <b>Focused on the action and reaction of both product and user.</b>",
       avatar: "",
       website: "http://mikegulline.com/",
       gender: "M",
